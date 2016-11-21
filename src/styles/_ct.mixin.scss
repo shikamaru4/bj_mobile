@@ -1,0 +1,31 @@
+
+@mixin margin($ma,$mb,$mc,$md){
+  margin:$ma $mb $mc $md;
+}
+@mixin padding($pa,$pb,$pc,$pd){
+  padding:$pa $pb $pc $pd;
+}
+@mixin borderRadius($a){
+  border-radius: $a;
+  -webkit-border-radius: $a;
+  -o-border-radius: $a;
+  -moz-border-radius: $a;
+  -ms-border-radius: $a;
+}
+@mixin whl($w,$h,$lh:$h){
+  width: $w;
+  height: $h;
+  line-height: $lh;
+}
+@mixin wh($w,$h){
+  width: $w;
+  height: $h;
+}
+@mixin bgcolor($b){
+  background-color: $b;
+}
+@mixin font($s,$c,$p){
+  font-size:$s;
+  color: $c;
+  font-weight: $p;
+}

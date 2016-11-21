@@ -1,0 +1,40 @@
+@mixin kg($w, $h, $lh:$h){
+  width: $w;
+  height: $h;
+  line-height: $lh;
+}
+@mixin main-color($b:#4598c4,$c:#FFF){
+  background: $b;
+  color: $c;
+}
+@mixin font($s:12px, $c:null, $w:normal){
+  font-size: $s;
+  color: $c;
+  font-weight: $w;
+}
+@mixin float-parent($h:auto, $o:hidden){
+  height: $h;
+  overflow: $o;
+}
+@mixin fyc(){
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin fycline(){
+  display: -webkit-box;
+  overflow: hidden;  
+  text-overflow: ellipsis;  
+  word-break: break-all;  
+  -webkit-box-orient: vertical;  
+  -webkit-line-clamp:2;  
+}
+
+@mixin borderRadius($a){
+  border-radius: $a;
+  -webkit-border-radius: $a;
+  -o-border-radius: $a;
+  -moz-border-radius: $a;
+  -ms-border-radius: $a;
+}

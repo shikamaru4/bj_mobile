@@ -1,0 +1,212 @@
+/*色值*/
+$white: #fff;
+$orange: #ff5c02;
+$green: #16967b;
+$yellow: #ff8f0f;
+$purple: #8d53ab;
+$blue: #279bcc;
+$gray1: #323232;
+$gray2: #2d2d2d;
+$gray3: #787878;
+$gray4: #868686;
+$gray5: #3a3a3a;
+$gray6: #a3a3a3;
+.white{
+  color: $white;
+}
+.orange{
+  color: $orange;
+}
+.green{
+  color: $green;
+}
+.yellow{
+  color: $yellow;
+}
+.purple{
+  color: $purple;
+}
+.blue{
+  color: $blue;
+}
+.gray1{
+  color: $gray1;
+}
+.gray2{
+  color: $gray2;
+}
+.gray3{
+  color: $gray3;
+}
+.gray4{
+  color: $gray4;
+}
+.gray5{
+  color: $gray5;
+}
+.gray6{
+  color: $gray6;
+}
+/*边框*/
+$border1: #d8d8d8;
+$border2: #d7d7d7;
+$border3: #eee;
+$border4: #e52702;
+$border5: #ff7f03;
+$border6: #f3f3f3;
+$border7: #848484;
+/*背影*/
+$bg1: #f0f0f0;
+$bg2: #f5f5f5;
+$bg3: #6cba0f;
+$bg4: #55574f;
+$bg5: #2575b0;
+$bg6: #2542b0;
+$bg7: #fcfcfc;
+$bg8: #f5f6f7;
+/*字体大小*/
+$f10: 10px;
+$f12: 12px;
+$f14: 14px;
+$f16: 16px;
+$f18: 18px;
+$f20: 20px;
+$f22: 22px;
+.f10{
+  font-size: $f10;
+}
+.f12{
+  font-size: $f12;
+}
+.f14{
+  font-size: $f14;
+}
+.f16{
+  font-size: $f16;
+}
+.f18{
+  font-size: $f18;
+}
+.f20{
+  font-size: $f20;
+}
+.f22{
+  font-size: $f22;
+}
+/*属性*/
+.md-fl{
+  float: left;
+}
+.md-fr{
+  float: right;
+}
+.md-none{
+  display: none;
+}
+.md-block{
+  display: block;
+}
+.md-inlineB{
+  display: inline-block;
+}
+.md-center{
+  text-align: center;
+}
+.md-auto{
+  margin: 0 auto;
+}
+.md-hidden{
+  overflow: hidden;
+}
+.md-repeat{
+  background-repeat: no-repeat;
+}
+.md-lineH{
+  line-height: 100%;
+}
+.md-cursor{
+  cursor: pointer;
+}
+.md-wh{
+  height: 100%;
+  width: 100%;
+}
+.md-fb{
+  font-weight: bold;
+}
+.md-ellipsis1{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.md-ellipsis2{
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.md-marB30{
+  margin-bottom: 30px;
+}
+.md-marB40{
+  margin-bottom: 30px;
+}
+a{
+  &:white:hover{
+    color: $white;
+  }
+  &.orange:hover{
+    color: $orange;
+  }
+  &.gray1:hover{
+    color: $orange;
+  }
+  &.gray2:hover{
+    color: $gray2;
+  }
+  &.gray4:hover{
+    color: $gray1;
+  }
+  &.gray5:hover{
+    color: $orange;
+  }
+  &.gray6:hover{
+    color: $orange;
+  }
+  &.green:hover{
+    color: $white;
+  }
+}
+
+@mixin kg($w, $h, $lh:$h){
+  width: $w;
+  height: $h;
+  line-height: $lh;
+}
+@mixin border($h, $s, $c){
+  border: $h $s $c;
+}
+@mixin border_l($h, $s, $c){
+  border-left: $h $s $c;
+}
+@mixin border_r($h, $s, $c){
+  border-right: $h $s $c;
+}
+@mixin border_b($h, $s, $c){
+  border-bottom: $h $s $c;
+}
+@mixin border_t($h, $s, $c){
+  border-top: $h $s $c;
+}
+@mixin bc($b, $c){
+  background-color: $b;
+  color: $c;
+}
+@mixin absolute($a, $t, $r, $b, $l){
+  position: $a;
+  top: $t;
+  right: $r;
+  bottom: $b;
+  left: $l;
+}

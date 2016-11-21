@@ -1,0 +1,52 @@
+$orange: #f95d00,#ff7e00,#f7a82b;
+$green: #78ba00;
+$gray: #444,#f7f7f7,#e4e4e4;
+$blue: #2d88cf;
+$white: #fff;
+
+@mixin margin($ma,$mb,$mc,$md){
+  margin:$ma $mb $mc $md;
+}
+@mixin padding($pa,$pb,$pc,$pd){
+  padding:$pa $pb $pc $pd;
+}
+
+@mixin borderRadius($a){
+  border-radius: $a;
+  -webkit-border-radius: $a;
+  -o-border-radius: $a;
+  -moz-border-radius: $a;
+  -ms-border-radius: $a;
+}
+@mixin wh($w,$h){
+  width: $w;
+  height: $h;
+}
+
+@mixin bgcolor($b){
+  background-color: $b;
+}
+
+@mixin font($s,$c,$p){
+  font-size:$s;
+  color: $c;
+  font-weight: $p;
+}
+.xg_auto{
+  margin:0 auto;
+}
+.xg_clear{
+  clear: both;
+}
+.xg_block{
+  display: block;
+}
+.xg_fl{
+  float: left;
+}
+.xg_fr{
+  float: right;
+}
+.xg_hidden{
+  overflow: hidden;
+}

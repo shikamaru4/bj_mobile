@@ -1,0 +1,50 @@
+$orange: #ff8b00;
+$green : #98ddd9;
+$yellow: #ff8f0f;
+$blue  : #279bcc;
+$gray1 : #323232;
+$gray2 : #2d2d2d;
+$gray3 : #787878;
+$gray  :#828282;
+$gray4 : #868686;
+$gray5 : #a3a3a3;
+
+$black1 : #2e2e2e;
+$black2 : #4e4e4e;
+$black3 : #777777;
+$black4 : #8e8e8e;
+
+
+$border1 : #d8d8d8;
+$border2 : #d7d7d7;
+$border3 : #eee;
+$border4 : #e52702;
+$border5 : #ff7f03;
+
+$bg1 : #f0f0f0;
+$bg2 : #f5f5f5;
+$bg3 : #6cba0f;
+$bg4 : #55574f;
+$bg5 : #2575b0;
+$bg6 : #2542b0;
+
+@mixin kg($w, $h, $lh:$h){
+  width: $w;
+  height: $h;
+  line-height: $lh;
+}
+@mixin font($s:null, $c:null, $w:normal){
+  font-size: $s;
+  color: $c;
+  font-weight: $w;
+}
+@mixin margin($ma,$mb,$mc,$md){
+  margin:$ma $mb $mc $md;
+}
+@mixin padding($pa,$pb,$pc,$pd){
+  padding:$pa $pb $pc $pd;
+}
+
+@mixin bgcolor($b){
+  background-color: $b;
+}
